@@ -104,3 +104,6 @@ dist
 .tern-port
 css/styles-to-cut.css
 css/styles.css
+08-backups/index.html
+sass/components/_features.scss
+sass/components/_reviews.scss
