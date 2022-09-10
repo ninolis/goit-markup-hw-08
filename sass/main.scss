@@ -1,9 +1,13 @@
 // variables
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './utils/variables';
 @import './base/reset';
 @import './base/common';
 @import './utils/visually-hidden';
 @import './components/header';
+// @import './components/features';
+// @import './components/reviews';
 @import './components/hero';
 @import './components/advantages';
 @import './components/activities';

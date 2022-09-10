@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw-08 main page</title>
     <link
       rel="stylesheet"
@@ -62,6 +63,74 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-button-open" data-menu-open>
+          <svg width="24" height="16">
+            <use href="./img/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-button-close" data-menu-close>
+          <svg width="18.67" height="18.67">
+            <use href="./img/icons.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu__navigation">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a
+                href="./index.html"
+                class="mob-menu__link mob-menu__text menu__link"
+                >Студія</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a
+                href="./portfolio.html"
+                class="mob-menu__link mob-menu__text menu__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="#" class="mob-menu__link mob-menu__text menu__link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-connect">
+          <ul class="mob-connect__list list">
+            <li class="mob-connect__item">
+              <a href="tel:+12127724150" class="mob-connect__text">
+                +1 212-772-4150</a
+              >
+            </li>
+            <li class="mob-connect__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-connect__text mob-connect__text--mail"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mob-socials">
+          <ul class="mob-socials__list list">
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Instagram</a>
+            </li>
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Twitter</a>
+            </li>
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Facebook</a>
+            </li>
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -604,6 +673,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
