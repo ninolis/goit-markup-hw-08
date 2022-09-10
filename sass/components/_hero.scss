@@ -9,7 +9,6 @@
 
   background-color: #c4c4c4;
   padding: 118px 0px;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -71,23 +70,23 @@
   }
 }
 
-.hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #2f303a;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/hero-bg-progressive.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border: 1px solid #000000;
-}
+// .hero {
+//   max-width: 1600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   background-color: #2f303a;
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/hero/hero-bg-progressive.jpg);
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+//   border: 1px solid #000000;
+// }
 
 .hero__title {
   font-weight: 900;
