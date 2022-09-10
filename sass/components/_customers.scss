@@ -1,0 +1,69 @@
+/* ------------ Customers ------------- */
+
+/* .customers {
+  background-color: aqua;  temp-color
+} */
+
+.customers-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--socials-color);
+  border-radius: 4px;
+  color: var(--socials-color);
+  transition: fill var(--primary-hover), border-color var(--primary-hover);
+}
+
+// .customers-link:hover,
+// .customers-link:focus {
+//   color: var(--secondary-color);
+//   border: 1px solid var(--secondary-color);
+//   border-radius: 4px;
+// }
+.customers-link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+  }
+}
+
+.customers-icon {
+  fill: currentColor;
+  transition: fill var(--primary-hover);
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--secondary-color);
+}
