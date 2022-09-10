@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>hw08. Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <!-- temp-bg-color -->
+      <div class="header__container container">
+        <nav class="header__navigation">
+          <a class="header__logo" href="./index.html"
+            >Web<span class="header__logo-span">Studio</span></a
+          >
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./index.html">Studio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contacts -->
+        <ul class="header__contacts list">
+          <!-- Link to e-mail address -->
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <!-- Link to phone number  -->
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+12127724150">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="filters section">
+        <div class="container">
+          <h1 class="visually-hidden">Filters</h1>
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button class="filter-button" type="button">All</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Web-sites</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button wide" type="button">Apps</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Design</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="project-list list">
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/web-site-technokryak.jpg"
+                    alt="Technoduck web-site."
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Technoduck</h2>
+                  <p class="project-category">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/poster-basketball-new-orlean-vs-golden-star.jpg"
+                    alt="Basketball poster new orlean vs golden star"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">
+                    Poster New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-category">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/seafood-restaurant.jpg"
+                    alt="Seafood restaurant Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Seafood Restaurant</h2>
+                  <p class="project-category">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/prime-project.jpg"
+                    alt="Prime project"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Project Prime</h2>
+                  <p class="project-category">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/boxes-project.jpg"
+                    alt="Boxes project"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Project Boxes</h2>
+                  <p class="project-category">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/web-site-inspiration-has-no-borders.jpg"
+                    alt="Inspiration has no borders web-site."
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="project-category">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/limited-edition-publisher.jpg"
+                    alt="Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Limited Edition</h2>
+                  <p class="project-category">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/lab-project.jpg"
+                    alt="Project LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Project LAB</h2>
+                  <p class="project-category">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project-link link" href="">
+                <div class="project-description-wrapper">
+                  <img
+                    class="project-image"
+                    src="./images/app-growing-business.jpg"
+                    alt="Growing Business Application"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet, reprehenderit officia voluptatibus, laudantium
+                    aspernatur iure!. Lorem, ipsum dolor sit amet consectetur,
+                    adipisicing elit.
+                  </p>
+                </div>
+                <div class="title-wrap">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="project-category">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="lower-block">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-contacts-wrap">
+            <a class="header__logo footer-logo" href="./index.html"
+              >Web<span class="footer-logo-span">Studio</span></a
+            >
+            <address class="directions">
+              <ul class="direction-list list">
+                <!-- Link to google maps -->
+                <li class="direction-item">
+                  <a
+                    class="place-link link"
+                    href="http://www.google.com/maps/place/40.768922491059755,-73.96483648019525"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >695 Park Ave, New York, NY 10065,<br />United States</a
+                  >
+                </li>
+                <!-- Link to e-mail address -->
+                <li class="direction-item">
+                  <a
+                    class="direction-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <!-- Link to phone number  -->
+                <li class="direction-item">
+                  <a class="direction-link link" href="tel:+12127724150"
+                    >+1 212-772-4150</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-socials-wrap">
+            <h2 class="footer-title">Find us on</h2>
+            <ul class="footer-socials list">
+              <li class="footer-socials-item">
+                <a class="footer-socials-link" href="" aria-label="Instagram">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a class="footer-socials-link" href="" aria-label="Twitter">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a class="footer-socials-link" href="" aria-label="Facebook">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a class="footer-socials-link" href="" aria-label="Linkedin">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-subscription">
+            <p class="footer-subscription-title">Subscribe to the newsletter</p>
+            <form class="footer-subscription-form">
+              <label
+                class="footer-subscription-label"
+                for="subscr-email"
+              ></label>
+              <input
+                class="footer-subscription-input"
+                type="email"
+                name="subscr-email"
+                id="subscr-email"
+                placeholder="E-mail"
+                required="required"
+              />
+              <button type="submit" class="footer-subscription-btn-text">
+                Suscribe
+                <svg class="footer-subscription-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
