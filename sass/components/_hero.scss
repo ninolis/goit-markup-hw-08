@@ -9,6 +9,7 @@
 
   background-color: #c4c4c4;
   padding: 118px 0px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -93,12 +94,14 @@
   font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06em;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   color: var(--primary-bg-color);
   display: inline-block;
   margin-bottom: 30px;
   margin-top: 0px;
+  // margin-left: auto;
+  // margin-right: auto;
 
   @include tablet {
     font-size: 26px;

@@ -35,6 +35,9 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -324,6 +327,7 @@ background-color: var(--temp-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mob.jpg);
   background-color: #c4c4c4;
   padding: 118px 0px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -367,7 +371,6 @@ background-color: var(--temp-bg-color);
   font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
   color: var(--primary-bg-color);
   display: inline-block;
@@ -437,6 +440,21 @@ background-color: var(--temp-bg-color);
   .advantages {
     width: 100%;
     padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .advantages {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    width: 100%;
   }
 }
 
@@ -531,9 +549,21 @@ background-color: var(--temp-bg-color);
 }
 
 /* ------------ Activities ------------- */
-/* .activities {
-  background-color: rgb(242, 245, 73);  temp-color
-} */
+.activities {
+  display: none;
+  padding-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .activities {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activities {
+    display: flex;
+  }
+}
+
 .activities-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -568,10 +598,10 @@ background-color: var(--temp-bg-color);
   width: 370px;
   height: 70px;
   display: flex;
-  column-gap: 30px;
-  background: rgba(47, 48, 58, 0.8);
   align-items: center;
   justify-content: center;
+  column-gap: 30px;
+  background: rgba(47, 48, 58, 0.8);
   bottom: 0px;
   left: 0;
 }
@@ -589,42 +619,77 @@ background-color: var(--temp-bg-color);
 
 /* ------------ Team-Members ------------- */
 .team-members {
-  margin-bottom: 0;
   background-color: var(--second-bg-color);
-  /* background-color: tan;  temp color */
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team-members {
+    margin-bottom: 0;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team-members-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  /* or 117% or 42px */
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 28px;
   text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-members-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
-.team-list {
-  display: flex;
-  /* align-items: center; */
-  /* margin-left: auto; */
+@media screen and (min-width: 480px) {
+  .team-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    column-gap: 30px;
+  }
 }
 
 .team-member {
-  display: flex;
-  flex-direction: column;
-  width: 270px;
-  height: 428px;
   background-color: var(--primary-bg-color);
-  opacity: 1;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  /* align-items: center; */
-  /* margin-left: auto; */
+  margin-bottom: 30px;
 }
-
-.team-member:not(:last-child) {
-  margin-right: 30px;
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .team-member {
+    width: calc((100% - 30px) / 2);
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 428px;
+    opacity: 1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /* align-items: center; */
+    /* margin-left: auto; */
+  }
 }
 
 .team-photo {
@@ -646,13 +711,22 @@ background-color: var(--temp-bg-color);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
-  margin-bottom: 16px;
 }
 
 .team-wrapper .socials {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-wrapper .socials {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .socials-item:not(:last-child) {
@@ -684,33 +758,68 @@ background-color: var(--temp-bg-color);
 }
 
 /* ------------ Customers ------------- */
-/* .customers {
-  background-color: aqua;  temp-color
-} */
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .customers-title {
+  display: block;
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 50px;
+  font-size: 28px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .customers-title {
+    font-size: 36px;
+  }
 }
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    display: flex;
+    column-gap: 30px;
+  }
 }
 
-.customers-item {
-  width: 170px;
-  height: 92px;
+@media screen and (min-width: 480px) {
+  .customers-item {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 0px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0px;
+  }
 }
-
-.customers-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .customers-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .customers-link {
@@ -718,7 +827,7 @@ background-color: var(--temp-bg-color);
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 92px;
   border: 1px solid var(--socials-color);
   border-radius: 4px;
   color: var(--socials-color);
