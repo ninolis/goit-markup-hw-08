@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw08. Portfolio</title>
+    <title>08-hw Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -26,41 +26,115 @@
           <a class="header__logo" href="./index.html"
             >Web<span class="header__logo-span">Studio</span></a
           >
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a class="navigation__link link" href="./index.html">Studio</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link current" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="">Contacts</a>
-            </li>
-          </ul>
+          <div class="menu">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a class="navigation__link link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <!-- Contacts -->
-        <ul class="header__contacts list">
-          <!-- Link to e-mail address -->
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <!-- Link to phone number  -->
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+12127724150">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+1 212-772-4150</a
-            >
-          </li>
-        </ul>
+        <div class="menu">
+          <ul class="header__contacts list">
+            <!-- Link to e-mail address -->
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <!-- Link to phone number  -->
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+12127724150">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-button-open" data-menu-open>
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-button-close" data-menu-close>
+          <svg width="18.67" height="18.67">
+            <use href="./images/icons.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu__navigation">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a
+                href="./index.html"
+                class="mob-menu__link mob-menu__text menu__link"
+                >Студія</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a
+                href="./portfolio.html"
+                class="mob-menu__link mob-menu__text menu__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="#" class="mob-menu__link mob-menu__text menu__link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-connect">
+          <ul class="mob-connect__list list">
+            <li class="mob-connect__item">
+              <a href="tel:+12127724150" class="mob-connect__text">
+                +1 212-772-4150</a
+              >
+            </li>
+            <li class="mob-connect__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-connect__text mob-connect__text--mail"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mob-socials">
+          <ul class="mob-socials__list">
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Instagram</a>
+            </li>
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Twitter</a>
+            </li>
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Facebook</a>
+            </li>
+            <li class="mob-socials__item">
+              <a href="#" class="mob-socials__text">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -88,13 +162,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/web-site-technokryak.jpg"
-                    alt="Technoduck web-site."
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-1.jpg    1x,
+                        ./images/projects/work-desk-1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-1.jpg    1x,
+                        ./images/projects/work-tab-1-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-1.jpg    1x,
+                        ./images/projects/work-mob-1-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-1.jpg"
+                      alt="Technoduck web-site."
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -111,13 +207,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/poster-basketball-new-orlean-vs-golden-star.jpg"
-                    alt="Basketball poster new orlean vs golden star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-2.jpg    1x,
+                        ./images/projects/work-desk-2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-2.jpg    1x,
+                        ./images/projects/work-tab-2-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-2.jpg    1x,
+                        ./images/projects/work-mob-2-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-2.jpg"
+                      alt="Basketball poster new orlean vs golden star"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -135,13 +253,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/seafood-restaurant.jpg"
-                    alt="Seafood restaurant Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-3.jpg    1x,
+                        ./images/projects/work-desk-3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-3.jpg    1x,
+                        ./images/projects/work-tab-3-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-3.jpg    1x,
+                        ./images/projects/work-mob-3-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-3.jpg"
+                      alt="Seafood restaurant Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -158,13 +298,31 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/prime-project.jpg"
-                    alt="Prime project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-4.jpg    1x,
+                        ./images/projects/work-desk-4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-5.jpg    1x,
+                        ./images/projects/work-tab-5-2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-4.jpg    1x,
+                        ./images/projects/work-mob-4-2x.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/projects/work-mob-4.jpg"
+                      alt="Prime project"
+                      width="450"
+                      height="294"
+                  /></picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -181,13 +339,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/boxes-project.jpg"
-                    alt="Boxes project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-5.jpg    1x,
+                        ./images/projects/work-desk-5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-6.jpg    1x,
+                        ./images/projects/work-tab-6-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-5.jpg    1x,
+                        ./images/projects/work-mob-5-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-5.jpg"
+                      alt="Boxes project"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -204,13 +384,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/web-site-inspiration-has-no-borders.jpg"
-                    alt="Inspiration has no borders web-site."
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-6.jpg    1x,
+                        ./images/projects/work-desk-6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-7.jpg    1x,
+                        ./images/projects/work-tab-7-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-6.jpg    1x,
+                        ./images/projects/work-mob-6-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-6.jpg"
+                      alt="Inspiration has no borders web-site."
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -227,13 +429,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/limited-edition-publisher.jpg"
-                    alt="Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-7.jpg    1x,
+                        ./images/projects/work-desk-7-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-8.jpg    1x,
+                        ./images/projects/work-tab-8-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-7.jpg    1x,
+                        ./images/projects/work-mob-7-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-7.jpg"
+                      alt="Limited Edition"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -250,13 +474,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/lab-project.jpg"
-                    alt="Project LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-8.jpg    1x,
+                        ./images/projects/work-desk-8-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-9.jpg    1x,
+                        ./images/projects/work-tab-9-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-8.jpg    1x,
+                        ./images/projects/work-mob-8-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-8.jpg"
+                      alt="Project LAB"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -273,13 +519,35 @@
             <li class="project-item">
               <a class="project-link link" href="">
                 <div class="project-description-wrapper">
-                  <img
-                    class="project-image"
-                    src="./images/app-growing-business.jpg"
-                    alt="Growing Business Application"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/work-desk-9.jpg    1x,
+                        ./images/projects/work-desk-9-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-tab-10.jpg    1x,
+                        ./images/projects/work-tab-10-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/work-mob-9.jpg    1x,
+                        ./images/projects/work-mob-9-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/projects/work-mob-9.jpg"
+                      alt="Growing Business Application"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-description">
                     Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
                     Eveniet, reprehenderit officia voluptatibus, laudantium
@@ -298,73 +566,75 @@
       </section>
     </main>
     <footer class="lower-block">
-      <div class="container">
+      <div class="container footer-section">
         <div class="footer-wrapper">
-          <div class="footer-contacts-wrap">
-            <a class="header__logo footer-logo" href="./index.html"
-              >Web<span class="footer-logo-span">Studio</span></a
-            >
-            <address class="directions">
-              <ul class="direction-list list">
-                <!-- Link to google maps -->
-                <li class="direction-item">
-                  <a
-                    class="place-link link"
-                    href="http://www.google.com/maps/place/40.768922491059755,-73.96483648019525"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >695 Park Ave, New York, NY 10065,<br />United States</a
-                  >
+          <div class="footer__tablet-design">
+            <div class="footer-contacts-wrap">
+              <a class="header__logo footer-logo" href="./index.html"
+                >Web<span class="footer-logo-span">Studio</span></a
+              >
+              <address class="directions">
+                <ul class="direction-list list">
+                  <!-- Link to google maps -->
+                  <li class="direction-item">
+                    <a
+                      class="place-link link"
+                      href="http://www.google.com/maps/place/40.768922491059755,-73.96483648019525"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >695 Park Ave, New York, NY 10065,<br />United States</a
+                    >
+                  </li>
+                  <!-- Link to e-mail address -->
+                  <li class="direction-item">
+                    <a
+                      class="direction-link link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <!-- Link to phone number  -->
+                  <li class="direction-item">
+                    <a class="direction-link link" href="tel:+12127724150"
+                      >+1 212-772-4150</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-socials-wrap">
+              <h2 class="footer-title">Find us on</h2>
+              <ul class="footer-socials list">
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Instagram">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <!-- Link to e-mail address -->
-                <li class="direction-item">
-                  <a
-                    class="direction-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Twitter">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <!-- Link to phone number  -->
-                <li class="direction-item">
-                  <a class="direction-link link" href="tel:+12127724150"
-                    >+1 212-772-4150</a
-                  >
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Facebook">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Linkedin">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer-socials-wrap">
-            <h2 class="footer-title">Find us on</h2>
-            <ul class="footer-socials list">
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Instagram">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Twitter">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Facebook">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Linkedin">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="footer-subscription">
             <p class="footer-subscription-title">Subscribe to the newsletter</p>
@@ -392,5 +662,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

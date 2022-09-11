@@ -1,19 +1,49 @@
 /* -------- Filters (Portfolio) --------- */
 
-/* .filters {
-  background-color: tan;  temp color
-} */
+.filters {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 83px;
+    padding-bottom: 105px;
+  }
+}
 
 .filter-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+    margin-bottom: 40px;
+    flex-direction: row;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    column-gap: 8px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    column-gap: 8px;
+  }
 }
 
-.filter-list li:not(:last-child) {
-  margin-right: 8px;
-}
+// .filter-list {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 50px;
+// }
+
+// .filter-list li:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .filter-button {
   padding: 6px 26px;
@@ -32,8 +62,16 @@
 }
 
 .wide {
-  padding-left: 52px;
-  padding-right: 52px;
+  // @include mobile {
+  //   padding-left: 126px;
+  //   // padding-right: 26px;
+  // }
+  // @include tablet {
+  // }
+  @include desktop {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
 }
 
 .filter-item {
@@ -72,18 +110,43 @@
 /* ------------ Projects ------------- */
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include mobile {
+    display: block;
+    width: 100%;
+  }
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    // column-gap: 30px;
+    flex-grow: 1;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    // column-gap: 30px;
+  }
 }
 
 .project-item {
-  width: 370px;
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  @include mobile {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
+    width: 370px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
 }
 
 .project-item:nth-child(3n + 3) {
