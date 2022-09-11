@@ -26,53 +26,57 @@
           <a class="header__logo" href="./index.html"
             >Web<span class="header__logo-span">Studio</span></a
           >
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a class="navigation__link link current" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="">Contacts</a>
-            </li>
-          </ul>
+          <div class="menu">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a class="navigation__link link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <!-- Contacts -->
-        <ul class="header__contacts list">
-          <!-- Link to e-mail address -->
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <!-- Link to phone number  -->
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+12127724150">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+1 212-772-4150</a
-            >
-          </li>
-        </ul>
+        <div class="menu">
+          <ul class="header__contacts list">
+            <!-- Link to e-mail address -->
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <!-- Link to phone number  -->
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+12127724150">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </div>
         <button type="button" class="menu-button-open" data-menu-open>
           <svg width="24" height="16">
-            <use href="./img/icons.svg#icon-menu_24px"></use>
+            <use href="./images/icons.svg#icon-menu_24px"></use>
           </svg>
         </button>
       </div>
       <div class="mob-menu is-hidden" data-menu>
         <button type="button" class="menu-button-close" data-menu-close>
           <svg width="18.67" height="18.67">
-            <use href="./img/icons.svg#icon-close_24px"></use>
+            <use href="./images/icons.svg#icon-close_24px"></use>
           </svg>
         </button>
         <nav class="mob-menu__navigation">
@@ -116,7 +120,7 @@
           </ul>
         </div>
         <div class="mob-socials">
-          <ul class="mob-socials__list list">
+          <ul class="mob-socials__list">
             <li class="mob-socials__item">
               <a href="#" class="mob-socials__text">Instagram</a>
             </li>
@@ -577,73 +581,75 @@
       </section>
     </main>
     <footer class="lower-block">
-      <div class="container">
+      <div class="container footer-section">
         <div class="footer-wrapper">
-          <div class="footer-contacts-wrap">
-            <a class="header__logo footer-logo" href="./index.html"
-              >Web<span class="footer-logo-span">Studio</span></a
-            >
-            <address class="directions">
-              <ul class="direction-list list">
-                <!-- Link to google maps -->
-                <li class="direction-item">
-                  <a
-                    class="place-link link"
-                    href="http://www.google.com/maps/place/40.768922491059755,-73.96483648019525"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >695 Park Ave, New York, NY 10065,<br />United States</a
-                  >
+          <div class="footer__tablet-design">
+            <div class="footer-contacts-wrap">
+              <a class="header__logo footer-logo" href="./index.html"
+                >Web<span class="footer-logo-span">Studio</span></a
+              >
+              <address class="directions">
+                <ul class="direction-list list">
+                  <!-- Link to google maps -->
+                  <li class="direction-item">
+                    <a
+                      class="place-link link"
+                      href="http://www.google.com/maps/place/40.768922491059755,-73.96483648019525"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >695 Park Ave, New York, NY 10065,<br />United States</a
+                    >
+                  </li>
+                  <!-- Link to e-mail address -->
+                  <li class="direction-item">
+                    <a
+                      class="direction-link link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <!-- Link to phone number  -->
+                  <li class="direction-item">
+                    <a class="direction-link link" href="tel:+12127724150"
+                      >+1 212-772-4150</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-socials-wrap">
+              <h2 class="footer-title">Find us on</h2>
+              <ul class="footer-socials list">
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Instagram">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <!-- Link to e-mail address -->
-                <li class="direction-item">
-                  <a
-                    class="direction-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Twitter">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <!-- Link to phone number  -->
-                <li class="direction-item">
-                  <a class="direction-link link" href="tel:+12127724150"
-                    >+1 212-772-4150</a
-                  >
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Facebook">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-socials-item">
+                  <a class="footer-socials-link" href="" aria-label="Linkedin">
+                    <svg class="footer-socials-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer-socials-wrap">
-            <h2 class="footer-title">Find us on</h2>
-            <ul class="footer-socials list">
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Instagram">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Twitter">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Facebook">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Linkedin">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="footer-subscription">
             <p class="footer-subscription-title">Subscribe to the newsletter</p>

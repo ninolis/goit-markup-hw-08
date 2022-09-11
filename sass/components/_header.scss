@@ -3,7 +3,24 @@
   display: flex;
   background-color: var(--primary-bg-color);
   /* background-color: pink; temp color */
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+}
+
+.menu {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
+}
+
+.menu-button-open {
+  margin-left: auto;
 }
 
 .header__container {
@@ -13,7 +30,6 @@
 /* .temp-bg-color {
 background-color: var(--temp-bg-color);
 } */
-
 .header__navigation {
   display: flex;
   align-items: center;
@@ -122,6 +138,21 @@ background-color: var(--temp-bg-color);
   fill: currentColor;
 }
 
+/* ------------ Mobil menu Header ------------- */
+
+.mob-menu {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 21px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+
 .menu-button-open {
   display: block;
   margin-left: auto;
@@ -137,20 +168,6 @@ background-color: var(--temp-bg-color);
     display: none;
   }
 }
-
-.mob-menu {
-  position: fixed;
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 21px;
-  padding-left: 40px;
-  padding-bottom: 48px;
-}
-
 .menu-button-close {
   display: block;
   margin-left: auto;
@@ -162,7 +179,6 @@ background-color: var(--temp-bg-color);
 .mob-menu__navigation {
   display: block;
 }
-
 .mob-menu__list {
   font-size: 40px;
   font-weight: 500;
@@ -175,14 +191,6 @@ background-color: var(--temp-bg-color);
   margin-bottom: 35px;
 }
 
-.menu__link {
-  color: var(--primary-text-color);
-  display: block;
-  text-decoration: none;
-  position: relative;
-  transition: background-color var(--primary-hover);
-}
-
 .mob-connect {
   display: block;
   margin-bottom: 64px;
@@ -190,6 +198,23 @@ background-color: var(--temp-bg-color);
 
 .mob-connect__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mob-connect__text {
+  //  font-family: inherit;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--color-two--);
+  text-decoration: none;
+}
+
+.menu__link {
+  color: var(--primary-text-color);
+  display: block;
+  text-decoration: none;
+  position: relative;
+  transition: background-color var(--primary-hover);
 }
 
 .mob-connect__text {
@@ -232,4 +257,11 @@ background-color: var(--temp-bg-color);
   line-height: 1.2;
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+.mob-connect__text--mail:hover,
+.mob-connect__text--mail:hover,
+.menu-button-open:hover,
+.menu-button-open:focus {
+  color: var(--secondary-color);
 }
