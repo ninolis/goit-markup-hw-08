@@ -1,13 +1,16 @@
 /* ------------ Hero ------------- */
 .hero {
-  height: 400px;
+  // height: 400px;
+  max-width: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-bg-mob.jpg);
 
-  background-color: #c4c4c4;
+  // background-color: #c4c4c4;#2F303A;
+  background-color: #2f303a;
+
   padding: 118px 0px;
   text-align: center;
   margin-left: auto;
@@ -100,8 +103,8 @@
   display: inline-block;
   margin-bottom: 30px;
   margin-top: 0px;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablet {
     font-size: 26px;
@@ -113,25 +116,20 @@
   }
 
   @include desktop {
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    padding-left: 204px;
-    padding-right: 204px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
   }
 }
-
-// .hero__title {
-//   margin-bottom: 30px;
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: var(--primary-bg-color);
-// }
 
 .hero__button {
   min-width: 200px;

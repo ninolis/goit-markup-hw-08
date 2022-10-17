@@ -23,18 +23,34 @@
 }
 
 .modal-wrapper {
-  position: absolute;
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
+  width: 450px;
   background-color: var(--primary-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 500ms linear, min-height 500ms linear;
+  padding: 40px;
+
+  @include tablet {
+    width: 450px;
+  }
+
+  @include desktop {
+    // position: absolute;
+    width: 528px;
+    min-height: 581px;
+    // padding: 40px;
+    // background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    // border-radius: 4px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // transition: transform 500ms linear, min-height 500ms linear;
+  }
 }
 
 .modal-close-btn {
@@ -114,7 +130,8 @@
 }
 
 .form-input:focus {
-  outline-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  outline: transparent;
 }
 
 .input-icon {
@@ -182,7 +199,8 @@
 }
 
 .form-input-coment:focus {
-  outline-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  outline: transparent;
 }
 
 .input-field {
@@ -205,7 +223,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .checkbox-text span {
@@ -226,6 +244,10 @@
   fill: #2196f3;
 }
 
+.input-check:focus + .checkbox-text span {
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+}
 .input-check:checked + .checkbox-text span {
   background-color: var(--secondary-color);
   /* background-image: url(./images/check.svg); */
@@ -253,14 +275,9 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-grey-color);
+  color: var(--secondary-color);
   transition: color var(--primary-hover);
 }
-
-// .modal-text-link:hover,
-// .modal-text-link:focus {
-//   color: var(--secondary-color);
-// }
 
 .modal-text-link {
   &:hover,

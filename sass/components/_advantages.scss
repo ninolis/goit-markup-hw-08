@@ -2,6 +2,7 @@
 .advantages {
   width: 100%;
   display: block;
+  padding: 60px 0px;
   margin-left: auto;
   margin-right: auto;
 
@@ -94,8 +95,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   @include mobile {
     margin-top: 0px;
     text-align: center;
