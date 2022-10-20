@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 /* -------- Team-Members (Our Team) --------- */
 
 .team-members {
@@ -15,14 +17,14 @@
 .team-members-title {
   margin-bottom: 30px;
   font-size: 28px;
-  line-height: (33px / 28px);
+  line-height: math.div(33px, 28px);
   text-align: center;
   letter-spacing: 0.03em;
 
   @include desktop {
     margin-bottom: 50px;
     font-size: 36px;
-    line-height: (42px / 36px);
+    line-height: math.div(42px, 36px);
   }
 }
 
@@ -82,14 +84,14 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: (19px / 16px);
+  line-height: math.div(19px, 16px);
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team-position {
   font-size: 16px;
-  line-height: (19px / 16px);
+  line-height: math.div(19px, 16px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);

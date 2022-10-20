@@ -1,35 +1,13 @@
 /* ------------ Header ------------- */
 .header {
-  /* background-color: pink; temp color */
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 
   @include tablet {
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  @include desktop {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-// .menu {
-//   display: none;
-
-//   @include tablet {
-//     display: block;
-//   }
-
-//   @include desktop {
-//     display: flex;
-//   }
-// }
-
-.menu-button-open {
-  // margin-left: auto;
 }
 
 .header__container {
@@ -44,9 +22,6 @@
   }
 }
 
-/* .temp-bg-color {
-background-color: var(--temp-bg-color);
-} */
 .header__navigation {
   display: flex;
   align-items: center;
@@ -62,10 +37,8 @@ background-color: var(--temp-bg-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  // text-decoration: none;
 }
 
-/* top line: logo color (text Color) */
 .header__logo-span {
   color: var(--primary-black-color);
 }
@@ -120,11 +93,6 @@ background-color: var(--temp-bg-color);
   left: 0px;
 }
 
-// .navigation__link:hover,
-// .navigation__link:focus {
-//   color: var(--secondary-color);
-// }
-
 .navigation__link {
   &:hover,
   &:focus {
@@ -133,12 +101,10 @@ background-color: var(--temp-bg-color);
 }
 
 .header__contacts {
-  // margin-left: auto;
   display: none;
 
   @include tablet {
     display: block;
-    // margin-right: auto;
     margin-left: 62px;
   }
 
@@ -151,14 +117,11 @@ background-color: var(--temp-bg-color);
 
 .contacts__item:not(:last-child) {
   @include tablet {
-    // margin-right: 50px;
-    // margin-left: 0;
     margin-bottom: 10px;
   }
 
   @include desktop {
     margin-right: 50px;
-    // margin-left: 0;
     margin-bottom: 0px;
   }
 }
@@ -206,7 +169,7 @@ background-color: var(--temp-bg-color);
   display: block;
   margin-left: auto;
   background-color: #ffffff;
-  margin-right: 10px;
+  // margin-right: 15px;
   border-color: transparent;
 
   @include tablet {
@@ -221,7 +184,7 @@ background-color: var(--temp-bg-color);
 .menu-button-close {
   display: block;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 15px;
   background-color: #ffffff;
   border-color: transparent;
 }

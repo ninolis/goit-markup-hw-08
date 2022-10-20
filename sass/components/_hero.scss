@@ -1,6 +1,6 @@
+@use 'sass:math';
 /* ------------ Hero ------------- */
 .hero {
-  // height: 400px;
   max-width: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -8,7 +8,6 @@
     ),
     url(../images/hero/hero-bg-mob.jpg);
 
-  // background-color: #c4c4c4;#2F303A;
   background-color: #2f303a;
 
   padding: 118px 0px;
@@ -93,38 +92,38 @@
 // }
 
 .hero__title {
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: math.div(42px, 26px);
   letter-spacing: 0.06em;
-  // text-align: center;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-bg-color);
   display: inline-block;
-  margin-bottom: 30px;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
 
   @include tablet {
-    font-size: 26px;
-    line-height: 1.36;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    padding-left: 204px;
-    padding-right: 204px;
+    // font-size: 26px;
+    // line-height: 1.36;
+    // margin-bottom: 30px;
+    // margin-top: 0px;
+    // padding-left: 204px;
+    // padding-right: 204px;
   }
 
   @include desktop {
     max-width: 696px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 900;
+    // margin-right: auto;
+    // margin-left: auto;
+    // margin-bottom: 30px;
+    // font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: math.div(60px, 44px);
+
+    // line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
 
