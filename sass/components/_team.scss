@@ -3,6 +3,7 @@
 /* -------- Team-Members (Our Team) --------- */
 
 .team-members {
+  // width: 100%;
   background-color: var(--second-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -36,13 +37,14 @@
   }
 
   @include desktop {
-    display: flex;
+    // display: flex;
     flex-wrap: nowrap;
     column-gap: 0px;
   }
 }
 
 .team-member {
+  width: 100%;
   background-color: var(--primary-bg-color);
   opacity: 1;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

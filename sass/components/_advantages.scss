@@ -2,6 +2,7 @@
 /* ------------ Advantages or features------------- */
 .advantages {
   padding: 60px 0px;
+
   @include desktop {
     padding-bottom: 0;
   }
@@ -15,25 +16,39 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
+    gap: 30px;
   }
 
   @include desktop {
     display: flex;
     padding-top: 0px;
     padding-bottom: 0px;
+    gap: 0;
   }
 }
 .advantages__item {
+  &:not(:last-child) {
+    // margin-right: 30px;
+    margin-bottom: 30px;
+    // margin-left: 0;
+  }
+
   @include tablet {
     width: calc((100% - 30px) / 2);
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
+
   @include desktop {
     width: calc((100% - 90px) / 4);
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    //   margin-left: 0;
-    // }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
   }
 }
 
@@ -62,13 +77,14 @@
 }
 
 .advantages__text {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   font-size: 14px;
   line-height: math.div(16px, 14px);
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
+  // margin-bottom: 30px;
 
-  @include desktop {
+  @include tablet {
     margin-bottom: 0;
   }
 }

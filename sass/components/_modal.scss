@@ -20,11 +20,16 @@
   pointer-events: initial;
   /* transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out; */
   transition: opacity 500ms linear, visibility 500ms linear;
+
+  @include tablet {
+    width: 450px;
+  }
 }
 
 .modal-wrapper {
   position: absolute;
-  width: 450px;
+  // width: 450px;
+  width: 100%;
   min-height: 609px;
   padding: 40px;
   background-color: var(--primary-bg-color);
@@ -36,6 +41,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 500ms linear, min-height 500ms linear;
+
+  @include mobile {
+    width: 450px;
+  }
 
   @include desktop {
     width: 528px;

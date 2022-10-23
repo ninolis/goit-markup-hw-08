@@ -78,9 +78,11 @@ body {
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -486,7 +488,7 @@ body {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -494,17 +496,29 @@ body {
     display: flex;
     padding-top: 0px;
     padding-bottom: 0px;
+    gap: 0;
   }
 }
 
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .advantages__item {
     width: calc((100% - 30px) / 2);
+  }
+  .advantages__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__item {
     width: calc((100% - 90px) / 4);
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -534,13 +548,12 @@ body {
 }
 
 .advantages__text {
-  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .advantages__text {
     margin-bottom: 0;
   }
@@ -644,13 +657,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team-list {
-    display: flex;
     flex-wrap: nowrap;
     column-gap: 0px;
   }
 }
 
 .team-member {
+  width: 100%;
   background-color: var(--primary-bg-color);
   opacity: 1;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1329,10 +1342,15 @@ body {
   /* transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out; */
   transition: opacity 500ms linear, visibility 500ms linear;
 }
+@media screen and (min-width: 768px) {
+  .backdrop {
+    width: 450px;
+  }
+}
 
 .modal-wrapper {
   position: absolute;
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   padding: 40px;
   background-color: var(--primary-bg-color);
@@ -1342,6 +1360,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 500ms linear, min-height 500ms linear;
+}
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
