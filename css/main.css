@@ -290,11 +290,11 @@ body {
 }
 
 .mob-menu__list {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.17;
   color: var(--secondary-color);
-  margin-bottom: 140px;
+  margin-bottom: 160px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -311,7 +311,7 @@ body {
 }
 
 .mob-connect__text {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.17;
   color: var(--secondary-color);
@@ -327,7 +327,7 @@ body {
 }
 
 .mob-connect__text--mail {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.17;
   text-decoration: none;
@@ -340,12 +340,12 @@ body {
 
 .mob-socials__list {
   display: inline-flex;
-  gap: 4px;
+  gap: 5px;
 }
 
 .mob-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 4px;
+  padding-right: 5px;
 }
 
 .mob-socials__text {
