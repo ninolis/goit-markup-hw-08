@@ -217,16 +217,19 @@
 } */
 
 .checkbox-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* font-weight: 400; */
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-grey-color);
-  text-decoration: none;
-  margin-bottom: 30px;
+  display: inline;
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-grey-color);
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
 }
 
 .checkbox-text span {
@@ -236,7 +239,7 @@
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-right: 7px;
   transition: background-color var(primary-hover),
     border-color var(--primary-hover);
