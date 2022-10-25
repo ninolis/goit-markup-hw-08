@@ -79,12 +79,15 @@
 .advantages__text {
   // margin-bottom: 30px;
   font-size: 14px;
-  line-height: math.div(16px, 14px);
+  line-height: math.div(24px, 14px);
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
   // margin-bottom: 30px;
 
   @include tablet {
     margin-bottom: 0;
+    // line-height: math.div(24px, 14px);
   }
+  // // @include desktop {
+  // }
 }

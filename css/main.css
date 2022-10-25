@@ -538,7 +538,7 @@ body {
 
 .advantages__text {
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
 }
@@ -562,6 +562,7 @@ body {
 @media screen and (min-width: 1200px) {
   .activities {
     display: flex;
+    padding-bottom: 94px;
   }
 }
 
